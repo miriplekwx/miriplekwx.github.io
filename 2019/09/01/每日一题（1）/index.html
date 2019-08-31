@@ -8,10 +8,10 @@
   <meta name="description" content>
   <meta name="author" content="John Doe">
   <!-- Open Graph Data -->
-  <meta property="og:title" content="shorel&#39;aran">
+  <meta property="og:title" content="每日一题（1）">
   <meta property="og:description" content>
   <meta property="og:site_name" content="shorel&#39;aran">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:image" content="http://yoursite.com">
   
     <link rel="alternate" href="/atom.xml" title="shorel&#39;aran" type="application/atom+xml">
@@ -35,8 +35,7 @@
 </head>
 
   <body>
-    <!-- Archive Header -->
-<!-- Page Header -->
+    <!-- Page Header -->
 
 
 <header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
@@ -44,7 +43,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title">Blog Archives</p>
+          <p class="title">每日一题（1）</p>
           <p class="subtitle"></p>
         </div>
         <div class="site-menu with-background-image">
@@ -89,42 +88,35 @@
   </div>
 </header>
 
-<!-- Archive List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
-        <div class="archive-item">
-  <a href="/2019/09/01/每日一题（1）/" class="post-title">
-    每日一题（1）
-  </a>
-  <div class="date text-muted">Posted on 2019-08-31 22:03:07</div>
-</div>
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By John Doe</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2019-08-31</span>
+            <span class="time">14:03:45</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h1 id="每日一题（1）"><a href="#每日一题（1）" class="headerlink" title="每日一题（1）"></a>每日一题（1）</h1><hr>
+<p>##在M维球中，选取n个点，求这n个点落在同一半球的概率</p>
+<p>##讨论：<br>只对二维和三维情况大概做讨论；<br>显然，在圆中，选取2个点一定在同一半圆，在三维球中选取3个点一定在同一半球。<br>其次，若前$（n-1）$个点在同一半球则将第$n$个点换成第$n$个点关于球心的对称点，可使得所有点在同一半球。换句话说，点${p}$与点$p$关于球心的对称点$p’$最多有一个不在某个半球中。<br>更进一步，从形式上讲，定义点${p}$的“领地”为：${p}$所在的所有半球中，截面垂直于$pp’$的那一个（可以认为是某种变换或者对偶问题下等价的${p}$）。这么一来，$n$个点在同一半球等价于$n$个点的领地交集不为空。<br>那么，观察其可能的交集的形式，在平面上如下图：<br>（图后面补）<br>每一个扇形为一个可能的交集。事实上在选点不重复时，每一个不被分割的扇形是一个可能的交集。而图中的每一条直径是每个所选的点所在直径的垂线，自然的，它的对称点也在这条直径上。<br>从排列组合的角度考虑，每一个交集对应一种所有点在同一个半球的情况，最多有$n^2-n+2$种。那么，这是在两两配对的$2n$个点的情况下可能的情况，这样选取原来的$n$个点就有$2^n$种选法。所以在二维时，题目所求概率为$\frac{n^2-n+2}{2^n}$。<br>我猜M维的情况可以用归纳法？或者划归为对偶问题而对偶问题有某种更好的形式利于递推之类的。</p>
 
-      
-        <div class="archive-item">
-  <a href="/2019/08/08/shorel-aran/" class="post-title">
-    你好旅行者
-  </a>
-  <div class="date text-muted">Posted on 2019-08-08 00:09:54</div>
-</div>
-
-      
-
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
-          
-          
-      </ul>
-    </div>
-  </div>
-</div>
+</article>
 
 
 
