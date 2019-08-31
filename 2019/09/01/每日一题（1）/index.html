@@ -100,7 +100,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2019-08-31</span>
-            <span class="time">16:11:32</span>
+            <span class="time">16:35:04</span>
           </span>
           
         </div>
@@ -116,7 +116,7 @@
 <p>那么，观察其可能的交集的形式，在平面上如下图：</p>
 <p>（图后面补）</p>
 <p>每一个扇形为一个可能的交集。事实上在选点不重复时，每一个不被分割的扇形是一个可能的交集。而图中的每一条直径是每个所选的点所在直径的垂线，自然的，它的对称点也在这条直径上。</p>
-<p>从排列组合的角度考虑，每一个交集对应一种所有点在同一个半球的情况，最多有$n^2-n+2$种。那么，这是在两两配对的$2n$个点的情况下可能的情况，这样选取原来的$n$个点就有$2^n$种选法。所以在二维时，题目所求概率为$\frac{n^2-n+2}{2^n}$。</p>
+<p>从排列组合的角度考虑，每一个交集对应一种所有点在同一个半球的情况，最多有$2n$种。那么，这是在两两配对的$2n$个点的情况下可能的情况，这样选取原来的$n$个点就有$2^n$种选法。所以在二维时，题目所求概率为$\frac{2n}{2^n}$。</p>
 <p>我猜M维的情况可以用归纳法？或者划归为对偶问题而对偶问题有某种更好的形式利于递推之类的。</p>
 
         </div>
@@ -155,6 +155,21 @@
   });
 </script>
 
-  </body>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
 </html>
 
